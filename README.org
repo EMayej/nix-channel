@@ -1,0 +1,7 @@
+#+title: Nix Channel
+* development
+** build a package
+For example, to build ~gost~:
+#+begin_src sh
+  nix-build . -A gost
+#+end_src
