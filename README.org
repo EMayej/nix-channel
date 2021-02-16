@@ -1,5 +1,9 @@
 #+title: Nix Channel
 * development
+** install git hooks
+#+begin_src sh
+  lefthook add pre-commit
+#+end_src
 ** build a package
 For example, to build ~gost~:
 #+begin_src sh
