@@ -1,4 +1,13 @@
 {
+    "adguardhome": {
+        "homepage": "https://github.com/AdguardTeam/AdGuardHome",
+        "description": "Network-wide ads & trackers blocking DNS server",
+        "version": "0.105.1",
+        "sha256": "a138ab4ec2d9f421e3d0eb78525397534c865102658ff9438090df9a4c64fefd",
+        "type": "tarball",
+        "url": "https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.105.1/AdGuardHome_linux_amd64.tar.gz",
+        "url_template": "https://github.com/AdguardTeam/AdGuardHome/releases/download/v<version>/AdGuardHome_linux_amd64.tar.gz"
+    },
     "gost": {
         "branch": "master",
         "description": "GO Simple Tunnel - a simple tunnel written in golang",

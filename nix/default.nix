@@ -2,4 +2,5 @@
 
 {
   gost = pkgs.callPackage ./gost.nix { };
+  adguardhome = pkgs.callPackage ./adguardhome.nix { };
 }
