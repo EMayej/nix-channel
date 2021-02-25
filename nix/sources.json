@@ -1,12 +1,24 @@
 {
+    "adguard-exporter": {
+        "branch": "master",
+        "description": "Adguard exporter based on eko/pihole-exporter",
+        "homepage": "https://github.com/ebrianne/adguard-exporter",
+        "owner": "ebrianne",
+        "repo": "adguard-exporter",
+        "rev": "v1.13",
+        "sha256": "0c3mbk184vqxyp6nn9zbbnsr4dfm8jjpzyk9lp74ncwxiydgjp4h",
+        "type": "tarball",
+        "url": "https://github.com/ebrianne/adguard-exporter/archive/v1.13.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "adguardhome": {
-        "homepage": "https://github.com/AdguardTeam/AdGuardHome",
         "description": "Network-wide ads & trackers blocking DNS server",
-        "version": "0.105.1",
+        "homepage": "https://github.com/AdguardTeam/AdGuardHome",
         "sha256": "a138ab4ec2d9f421e3d0eb78525397534c865102658ff9438090df9a4c64fefd",
         "type": "tarball",
         "url": "https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.105.1/AdGuardHome_linux_amd64.tar.gz",
-        "url_template": "https://github.com/AdguardTeam/AdGuardHome/releases/download/v<version>/AdGuardHome_linux_amd64.tar.gz"
+        "url_template": "https://github.com/AdguardTeam/AdGuardHome/releases/download/v<version>/AdGuardHome_linux_amd64.tar.gz",
+        "version": "0.105.1"
     },
     "gost": {
         "branch": "master",
