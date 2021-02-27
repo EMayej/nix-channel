@@ -1,7 +1,6 @@
-{ pkgs, lib, buildGoModule }:
+{ sources, pkgs, lib, buildGoModule }:
 
 let
-  sources = import ./sources.nix;
   adguard-exporter = sources.adguard-exporter;
   version = lib.removePrefix "v" adguard-exporter.rev;
 in buildGoModule {

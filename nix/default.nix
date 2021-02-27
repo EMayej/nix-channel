@@ -1,4 +1,6 @@
-{ pkgs ? import <nixpkgs> { } }:
+{ pkgs ? import <nixpkgs> {
+  overlays = [ (self: super: { sources = import ./sources.nix; }) ];
+} }:
 
 {
   gost = pkgs.callPackage ./gost.nix { };

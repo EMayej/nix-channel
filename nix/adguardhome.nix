@@ -1,8 +1,6 @@
-{ stdenv, fetchurl }:
+{ sources, stdenv, fetchurl }:
 
-let
-  sources = import ./sources.nix;
-  adguardhome = sources.adguardhome;
+let adguardhome = sources.adguardhome;
 in stdenv.mkDerivation {
   pname = "adguardhome";
   inherit (adguardhome) version;

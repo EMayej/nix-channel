@@ -1,7 +1,6 @@
-{ pkgs, lib, buildGoModule }:
+{ sources, pkgs, lib, buildGoModule }:
 
 let
-  sources = import ./sources.nix;
   gost = sources.gost;
   version = lib.removePrefix "v" gost.rev;
 in buildGoModule {
