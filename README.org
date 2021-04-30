@@ -14,3 +14,7 @@ For instance, if we want to update ~adguardhome~ to ~0.106.0~:
 #+begin_src sh
 niv update adguardhome -v 0.106.0
 #+end_src
+
+It looks like ~niv~ decompress the file downloaded and then generate a hash,
+while the actually hash used is against the compressed file. Thus we have to fix
+the hash after ~niv update~. See this [[https://nixos.wiki/wiki/Nix_Hash][link]] for more details.
