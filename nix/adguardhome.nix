@@ -1,4 +1,4 @@
-{ sources, stdenv, fetchurl }:
+{ sources, lib, stdenv, fetchurl }:
 
 let adguardhome = sources.adguardhome;
 in stdenv.mkDerivation {
@@ -11,7 +11,7 @@ in stdenv.mkDerivation {
     install -m755 -D ./AdGuardHome $out/bin/adguardhome
   '';
 
-  meta = with stdenv.lib; {
+  meta = with lib; {
     inherit (adguardhome) description homepage;
     license = licenses.gpl3;
     platforms = platforms.linux;
